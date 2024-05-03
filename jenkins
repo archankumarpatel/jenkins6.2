@@ -8,6 +8,7 @@ pipeline {
             }
         }
 
+
         stage('Unit and Integration Tests') {
             steps {
                 echo "Running unit tests."
@@ -20,6 +21,8 @@ pipeline {
                 echo "Checking the quality of the code using a code analysis tool."
             }
         }
+
+
 
         stage('Security Scan') {
             steps {
